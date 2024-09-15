@@ -1,8 +1,68 @@
 // Customizing Bootstrap with Sass variables:
 // https://getbootstrap.com/docs/5.0/customize/sass/
 
-// $primary: #276fc2;
-// $secondary: #e8d21d;
-// $border-radius: 1px;
-
 @import '../node_modules/bootstrap/scss/bootstrap';
+
+body {
+    background-color: black;
+    color: #c43110;
+}
+
+.loved-by-the-king-regular {
+    font-family: "Loved by the King", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+figure img {
+    max-width: 90vw;
+}
+  
+.fright-pub .btn-primary {
+    --bs-btn-font-family: "Loved by the King", cursive;
+    --bs-btn-font-size: 2rem;
+    --bs-btn-font-weight: 400;
+
+    --bs-btn-color: #c43110;
+    --bs-btn-bg: #2a0101;
+    --bs-btn-border-color: #3a0909;
+
+    --bs-btn-hover-color: #fc0c0c;
+    --bs-btn-hover-bg: #3f0202;
+    --bs-btn-hover-border-color: #260202;
+    
+    --bs-btn-focus-shadow-rgb: 49, 132, 253;
+    
+    --bs-btn-active-color: #f9bdbd;
+    --bs-btn-active-bg: rgb(202, 10, 42);
+    --bs-btn-active-border-color: #fd0d0d;
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+
+    --bs-btn-disabled-color: #858282;
+    --bs-btn-disabled-bg: #654242;
+    --bs-btn-disabled-border-color: #9c3131;
+
+    --bs-btn-padding-x: 1.75rem;
+    --bs-btn-padding-y: 0.675rem;
+  
+    /* Apply the pulse animation */
+    animation: pulse 1.7s infinite;
+}
+
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.02);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+footer {
+    color: #000;
+    opacity: 0;
+}
